@@ -16,9 +16,9 @@ jobs:
       security-events: write # for results upload to Github Code Scanning
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
+      - name: Checkout repo 2
         uses: actions/checkout@v4
-      - name: Audit API definition for security issues
+      - name: Audit API definition for security issues 2
         uses: 42Crunch/api-security-audit-action-freemium@v1
         with:
           # Upload results to Github Code Scanning
