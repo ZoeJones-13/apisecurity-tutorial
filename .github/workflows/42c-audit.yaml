@@ -16,6 +16,8 @@ jobs:
       security-events: write # for results upload to Github Code Scanning
     runs-on: ubuntu-latest
     steps:
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
       - name: Checkout repo 2
         uses: actions/checkout@v4
       - name: Audit API definition for security issues 2
