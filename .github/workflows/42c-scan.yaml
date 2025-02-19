@@ -71,14 +71,14 @@ jobs:
             name: 42Crunch_ScanReport_${{ github.run_id }}
             path: 42Crunch_ScanReport_${{ github.run_id }}.SARIF
             if-no-files-found: error
-      - name: save-scan-report
+      - name: save-scan-report1
         if: always()        
         uses: actions/upload-artifact@v4
         with:
             name: 42Crunch_ScanReport_${{ github.run_id }}
             path: 42Crunch_RawReport_${{ github.run_id }}.json
             if-no-files-found: error  
-      - name: save-pdf-report
+      - name: save-pdf-report1
         if: always()        
         uses: actions/upload-artifact@v4
         with:
